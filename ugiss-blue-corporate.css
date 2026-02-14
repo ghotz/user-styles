@@ -1,0 +1,183 @@
+@-moz-document domain("ugiss-website.pages.dev"), domain("ugiss.org") {
+/* ========================================
+   OVERRIDE BLU SCURO RGB(0,51,102) = #003366
+   Testo + Menu + Bottoni
+   ======================================== */
+
+/* TESTO PRINCIPALE */
+body {
+  color: #003366;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #003366;
+}
+
+a {
+  color: #003366;
+}
+
+pre {
+  color: #003366;
+}
+
+.logo__title {
+  color: #003366;
+}
+
+.pagination__item {
+  color: #003366;
+}
+
+abbr[title] {
+  border-bottom-color: #003366;
+}
+
+/* MENU PRINCIPALE */
+.menu__list {
+  background: #003366;
+}
+
+.menu__btn {
+  background: #003366;
+}
+
+.menu__item:hover {
+  background: #004d99; /* blu leggermente più chiaro per hover */
+}
+
+.menu__item--active {
+  background: #004d99; /* stesso colore dell'hover */
+}
+
+/* SUBMENU (dal v2-styles.css) */
+.submenu {
+  background: #003366;
+}
+
+.submenu__link:hover {
+  background: #004d99; /* coerente con menu principale */
+}
+
+/* BOTTONI GENERICI */
+.btn {
+  background: #003366;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #004d99;
+  color: #fff;
+}
+
+/* BOTTONI FORM (submit/reset) */
+input[type=submit],
+input[type=reset] {
+  background: #003366;
+  color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background: #004d99;
+  color: #fff;
+}
+
+/* SOCIAL WIDGET BUTTONS */
+.widget-social__link {
+  background: #003366;
+}
+
+.widget-social__link:hover {
+  background: #004d99;
+}
+
+/* TAG LINKS */
+.widget-taglist__link {
+  background: #003366;
+  color: #fff;
+}
+
+.widget-taglist__link:hover {
+  background: #004d99;
+}
+
+/* TAGS NEI POST */
+.tags__link,
+.tags__badge {
+  background: #003366;
+  color: #fff;
+}
+
+.tags__link:hover {
+  background: #004d99;
+}
+
+/* LANGUAGES WIDGET */
+.widget-languages__link-btn {
+  background: #003366;
+  color: #fff;
+}
+
+.widget-languages__link:hover .widget-languages__link-btn {
+  background: #004d99;
+}
+
+/* TOC TITLE */
+.toc__title {
+  background: #003366;
+  color: #fff;
+}
+
+/* PAGINATION HOVER (per coerenza) */
+.pagination__item:hover,
+.pagination__item--current {
+  background: #003366;
+  color: #fff;
+}
+
+/* KBD TAG (keyboard) */
+kbd {
+  background-color: #003366;
+  color: #fff;
+}
+
+/* FOOTER (opzionale - se vuoi il footer blu invece di grigio scuro) */
+.footer {
+  background: #003366;
+  color: #fff;
+  border-top-color: #004d99;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #66b3ff; /* azzurro chiaro per hover */
+}
+
+/* DIVIDER (la barra orizzontale sotto l'header) */
+.divider {
+  background: #003366;
+}
+
+/* WIDGET TITLE BORDER */
+.widget__title {
+  border-bottom-color: #003366;
+}
+
+/* BLOCKQUOTE BORDER */
+blockquote {
+  border-left-color: #003366;
+}
+
+/* FOCUS STATE per il menu button */
+:focus > .menu__btn-title {
+  box-shadow: inset 0 0 1px 3px #66b3ff; /* azzurro chiaro */
+}
+
+.js .menu__btn--active {
+  color: #66b3ff;
+}
+}
