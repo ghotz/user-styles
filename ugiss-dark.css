@@ -1,0 +1,354 @@
+@-moz-document domain("ugiss-website.pages.dev"), domain("ugiss.org") {
+/* ========================================
+   ROADSTER DARK THEME - Complete Override
+   ======================================== */
+
+/* BACKGROUND PRINCIPALE */
+body {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.wrapper {
+  background: #2a2a2a;
+}
+
+.header {
+  background: #2a2a2a;
+}
+
+/* CONTENITORI */
+.container--outer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/* TIPOGRAFIA - HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f0f0;
+}
+
+/* LINKS */
+a {
+  color: #e0e0e0;
+}
+
+a:hover {
+  color: {{ #d2232a }};
+}
+
+/* HORIZONTAL RULE */
+hr {
+  border-top-color: #404040;
+}
+
+/* FIGURE CAPTION */
+figcaption {
+  color: #999;
+}
+
+/* CODE BLOCKS */
+pre,
+code {
+  background-color: #1e1e1e;
+  border-color: #404040;
+}
+
+code {
+  color: #ff6b6b; /* rosso più chiaro per inline code */
+}
+
+pre {
+  color: #e0e0e0;
+}
+
+/* KEYBOARD */
+kbd {
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+  border: 1px solid #404040;
+}
+
+/* ABBREVIATION */
+abbr[title] {
+  border-bottom-color: #666;
+}
+
+/* BLOCKQUOTE */
+blockquote {
+  border-left-color: {{ #d2232a }};
+  color: #c0c0c0;
+}
+
+/* LOGO */
+.logo__title {
+  color: #f0f0f0;
+}
+
+/* Quadrato con bordi arrotondati */
+.logo__img {
+  background: #fff;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+
+/* Cerchio */
+/*
+.logo__img {
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+*/
+
+/* MENU (già scuro, lo schiarischiamo leggermente) */
+.menu__list {
+  background: #1e1e1e;
+}
+
+.menu__btn {
+  background: #1e1e1e;
+}
+
+.menu__item:hover {
+  background: {{ #d2232a }};
+}
+
+.menu__item--active {
+  background: {{ #d2232a }};
+}
+
+/* SUBMENU */
+.submenu {
+  background: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submenu__item {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* POST META */
+.meta {
+  color: #999;
+}
+
+.meta a {
+  color: #b0b0b0;
+}
+
+.meta a:hover {
+  color: {{ #d2232a }};
+}
+
+/* POST CONTENT */
+.content ul,
+.content ol {
+  color: #e0e0e0;
+}
+
+/* POST TAGS */
+.tags__link,
+.tags__badge {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.tags__link:hover {
+  background: {{ #d2232a }};
+  color: #fff;
+}
+
+/* COMMENTS */
+.comments__title {
+  border-bottom-color: #404040;
+}
+
+/* TOC */
+.toc__title {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.toc__menu a {
+  color: {{ #d2232a }};
+  border-bottom-color: #404040;
+}
+
+/* AUTHORBOX */
+.authorbox {
+  border-top-color: #404040;
+  border-bottom-color: #404040;
+}
+
+.authorbox__avatar {
+  border-color: #404040;
+}
+
+/* LIST ITEMS */
+.list__item {
+  border-bottom-color: #404040;
+}
+
+/* PAGINATION */
+.pagination__item {
+  color: #e0e0e0;
+  background: #1e1e1e;
+}
+
+.pagination__item:hover,
+.pagination__item--current {
+  color: #fff;
+  background: {{ #d2232a }};
+}
+
+/* PAGER */
+.pager {
+  border-bottom-color: #404040;
+}
+
+/* TABLES */
+table {
+  border-top-color: #404040;
+  border-left-color: #404040;
+}
+
+td,
+th {
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+}
+
+th {
+  background: #1e1e1e;
+}
+
+/* FORMS */
+input {
+  background: #1e1e1e;
+  border-color: #404040;
+  color: #e0e0e0;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+input[type=url]:hover,
+textarea:hover {
+  border-color: #666;
+}
+
+input[type=submit],
+input[type=reset] {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background: {{ #d2232a }};
+  color: #fff;
+}
+
+textarea {
+  background: #1e1e1e;
+  border-color: #404040;
+  color: #e0e0e0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
+/* WIDGETS */
+.widget__title {
+  border-bottom-color: {{ #d2232a }};
+}
+
+.widget__item {
+  border-bottom-color: #404040;
+}
+
+.widget__counter--bubble {
+  color: #999;
+  background: #1e1e1e;
+}
+
+/* SEARCH WIDGET */
+.widget-search__form {
+  background: #1e1e1e;
+}
+
+.widget-search__field {
+  background: #2a2a2a;
+  border-color: #404040;
+  color: #e0e0e0;
+}
+
+.widget-search__field:active,
+.widget-search__field:focus {
+  outline-color: {{ #d2232a }};
+}
+
+/* FOOTER */
+.footer {
+  background: #1e1e1e;
+  border-top-color: #404040;
+}
+
+/* MARK (evidenziatore) */
+mark {
+  background-color: #665500; /* giallo scuro */
+  color: #fff;
+}
+
+/* WARNING BOX */
+.warning {
+  border-color: #404040;
+  background: #2a2a2a;
+}
+
+.warning__icon {
+  fill: #666;
+}
+
+/* BUTTONS */
+.btn {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.btn:hover {
+  background: {{ #d2232a }};
+  color: #fff;
+}
+
+/* SELECTION */
+::selection {
+  background: {{ #d2232a }};
+  color: #fff;
+}
+
+::-moz-selection {
+  background: {{ #d2232a }};
+  color: #fff;
+}
+
+/* SCROLLBAR (per browser WebKit) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+}
